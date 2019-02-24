@@ -16,7 +16,7 @@ class PersonalDetails extends Component{
     render(){
         const { values } = this.props
         return(
-        <Form color='blue' >
+        <Form>
             <h1 className="ui centered">Enter Personal Details</h1>
             <Form.Field>
                 <label>Age</label>
