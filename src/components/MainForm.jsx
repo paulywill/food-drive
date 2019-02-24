@@ -3,6 +3,39 @@ import UserDetails from './UserDetails';
 import PersonalDetails from './PersonalDetails';
 import Confirmation from './Confirmation';
 import Success from './Success';
+import { Step } from 'semantic-ui-react';
+
+
+
+class UserSteps extends Component {
+
+    render() {
+        const { values } = this.props;
+        return (
+            <Step.Group ordered>
+                <Step completed>
+                    <Step.Content>
+                        <Step.Title>Shipping</Step.Title>
+                        <Step.Description>Choose your shipping options</Step.Description>
+                    </Step.Content>
+                </Step>
+
+                <Step completed>
+                    <Step.Content>
+                        <Step.Title>Billing</Step.Title>
+                        <Step.Description>Enter billing information</Step.Description>
+                    </Step.Content>
+                </Step>
+
+                <Step active>
+                    <Step.Content>
+                        <Step.Title>Confirm Order</Step.Title>
+                    </Step.Content>
+                </Step>
+            </Step.Group>
+        )
+    }
+}
 
 class MainForm extends Component {
     state = {
@@ -37,6 +70,8 @@ class MainForm extends Component {
         const {step} = this.state;
         const { firstName, lastName, email, age, city, country } = this.state;
         const values = { firstName, lastName, email, age, city, country };
+        
+        
         switch(step) {
         case 1:
             return <UserDetails 
@@ -63,4 +98,5 @@ class MainForm extends Component {
     }
 }
 
-export default MainForm;
+
+export  default MainForm;

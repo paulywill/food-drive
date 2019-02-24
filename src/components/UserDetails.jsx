@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, Button } from 'semantic-ui-react';
+import { Form, Button, Step } from 'semantic-ui-react';
 
 class UserDetails extends Component{
 
@@ -11,7 +11,7 @@ class UserDetails extends Component{
     render(){
         const { values } = this.props;
         return(
-            <Form color='green' >
+            <Form >
                 <h1 className="ui centered">Enter User Details</h1>
                 <Form.Field>
                     <label>First Name</label>
