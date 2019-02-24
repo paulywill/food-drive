@@ -94,7 +94,12 @@ class MainForm extends Component {
                     />
         case 4:
             return <Success />
+        
+        default:
+            return null
         }
+       
+
     }
 }
 
