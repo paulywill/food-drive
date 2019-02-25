@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Step } from 'semantic-ui-react';
+import { Step } from 'semantic-ui-react';
 
 class Success extends Component{
     
