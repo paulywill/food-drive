@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, Button } from 'semantic-ui-react';
+import { Form, Button, Step } from 'semantic-ui-react';
 
 class PersonalDetails extends Component{
     saveAndContinue = (e) => {
@@ -16,7 +16,30 @@ class PersonalDetails extends Component{
         const { values } = this.props
         return(
         <Form>
-            <h1 className="ui centered">Enter Personal Details</h1>
+
+                <Step.Group ordered>
+                    <Step completed>
+                        <Step.Content>
+                            <Step.Title>Organizer</Step.Title>
+                            <Step.Description>Enter Organizer's Details</Step.Description>
+                        </Step.Content>
+                    </Step>
+
+                    <Step active >
+                        <Step.Content>
+                            <Step.Title>Goals</Step.Title>
+                            <Step.Description>Enter goals for food drive</Step.Description>
+                        </Step.Content>
+                    </Step>
+
+                    <Step >
+                        <Step.Content>
+                            <Step.Title>Share</Step.Title>
+                            <Step.Description>Spread the word</Step.Description>
+                        </Step.Content>
+                    </Step>
+                </Step.Group>
+
             <Form.Field>
                 <label>Age</label>
                 <input placeholder='Age'

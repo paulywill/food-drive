@@ -10,9 +10,31 @@ class UserDetails extends Component{
 
     render(){
         const { values } = this.props;
-        return(
-            <Form >
-                <h1 className="ui centered">Enter User Details</h1>
+        return(                
+            <Form color='green' >
+                <Step.Group ordered>
+                    <Step active>
+                        <Step.Content>
+                            <Step.Title>Organizer</Step.Title>
+                            <Step.Description>Enter Organizer's Details</Step.Description>
+                        </Step.Content>
+                    </Step>
+
+                    <Step >
+                        <Step.Content>
+                            <Step.Title>Goals</Step.Title>
+                            <Step.Description>Enter goals for food drive</Step.Description>
+                        </Step.Content>
+                    </Step>
+
+                    <Step >
+                        <Step.Content>
+                            <Step.Title>Share</Step.Title>
+                            <Step.Description>Spread the word</Step.Description>
+                        </Step.Content>
+                    </Step>
+                </Step.Group>
+                
                 <Form.Field>
                     <label>First Name</label>
                     <input

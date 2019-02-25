@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, List } from 'semantic-ui-react';
+import { Button, List, Step } from 'semantic-ui-react';
 
 class Confirmation extends Component{
     saveAndContinue = (e) => {
@@ -17,8 +17,28 @@ class Confirmation extends Component{
 
         return(
             <div>
-                <h1 className="ui centered">Confirm your Details</h1>
-                <p>Click Confirm if the following details have been correctly entered</p>
+                <Step.Group ordered>
+                    <Step completed>
+                        <Step.Content>
+                            <Step.Title>Organizer</Step.Title>
+                            <Step.Description>Enter Organizer's Details</Step.Description>
+                        </Step.Content>
+                    </Step>
+
+                    <Step completed >
+                        <Step.Content>
+                            <Step.Title>Goals</Step.Title>
+                            <Step.Description>Enter goals for food drive</Step.Description>
+                        </Step.Content>
+                    </Step>
+
+                    <Step active >
+                        <Step.Content>
+                            <Step.Title>Share</Step.Title>
+                            <Step.Description>Spread the word</Step.Description>
+                        </Step.Content>
+                    </Step>
+                </Step.Group>
                 <List>
                     <List.Item>
                         <List.Icon name='users' />
