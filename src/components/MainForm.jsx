@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import UserDetails from './UserDetails';
-import PersonalDetails from './PersonalDetails';
-import Confirmation from './Confirmation';
+import GoalDetails from './GoalDetails';
+import ShareDetails from './ShareDetails';
 import Success from './Success';
 
 class MainForm extends Component {
@@ -45,14 +45,14 @@ class MainForm extends Component {
                     values={values}
                     />
         case 2:
-            return <PersonalDetails 
+            return <GoalDetails 
                     nextStep={this.nextStep}
                     prevStep={this.prevStep}
                     handleChange = {this.handleChange}
                     values={values}
                     />
         case 3:
-            return <Confirmation 
+            return <ShareDetails 
                     nextStep={this.nextStep}
                     prevStep={this.prevStep}
                     values={values}
