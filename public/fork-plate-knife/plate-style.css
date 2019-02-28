@@ -9,8 +9,8 @@
    position:fixed;
 
    /* TODO: make top and left dynamic or setup in prod; they're the official placement to graph  */
-   top:25%;     
-   left: 25%; 
+      
+   left: center; 
 }
 
 #fork-plate-knife {
@@ -27,7 +27,6 @@
    border-style: solid;
    border-color: green;
    */
-
    
    position:fixed;
    z-index: 2;
