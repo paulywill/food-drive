@@ -1,27 +1,34 @@
 #plate-graphic {
+   
+   /* TESTING 
    border-style: solid;
    border-color: coral;
-   height: 300px;
+   */
+   height: 275px;
    width: 300px;
    position:fixed;
-   top:5%;
-   left: 5%;
-  
+
+   /* TODO: make top and left dynamic or setup in prod; they're the official placement to graph  */
+   top:25%;     
+   left: 25%; 
 }
 
 #fork-plate-knife {
+   /* TESTING
    border-style: solid;
    border-color: blueviolet;
+   */
    position:fixed;
    z-index: 1;
-   
-  
-
 }
 
 #progress-plate {
+   /* TESTING
    border-style: solid;
    border-color: green;
+   */
+
+   
    position:fixed;
    z-index: 2;
    width:225px;
@@ -29,8 +36,6 @@
    padding-top:30px;
    padding-left: 41px;
 }
-
-
 
 .ldBar-label {
    color: #000;
@@ -40,7 +45,6 @@
    position: absolute;
    left: 39%;
    bottom: 38%
-  
 }
 
 
