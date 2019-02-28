@@ -6,7 +6,9 @@
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-scripts": "2.1.5",
-    "semantic-ui-react": "^0.85.0"
+    "semantic-ui-react": "^0.85.0",
+    "typescript": "^3.4.0-dev.20190227",
+    "uuid": "^3.3.2"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -6,6 +6,8 @@ import { Container } from 'semantic-ui-react';
 
 class App extends Component {
 
+ //* TODO: Logic for button in Content to redirect/route to MainForm
+
   render() {
     return(
       <Container id="container" textAlign='center' >
