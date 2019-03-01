@@ -1,12 +1,23 @@
+#stats {
+
+   border-style: solid;
+   border-color: red;
+   position:static;
+
+}
+
+
 #plate-graphic {
    
    /* TESTING 
    border-style: solid;
    border-color: coral;
    */
-   height: 275px;
    width: 300px;
-   position:fixed;
+   height: 275px;
+   min-width: 300px;
+   min-height:275px;
+   position:static;
 
    /* TODO: make top and left dynamic or setup in prod; they're the official placement to graph  */
       
@@ -18,7 +29,7 @@
    border-style: solid;
    border-color: blueviolet;
    
-   position:fixed;
+   position:absolute;
    z-index: 1;
 }
 
@@ -26,9 +37,7 @@
    /* TESTING */
    border-style: solid;
    border-color: green;
-   
-   
-   position:fixed;
+   position:absolute;
    z-index: 2;
    width:225px;
    height:225px; 
