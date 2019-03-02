@@ -1,1 +1,45 @@
-@import "../Divi/style.css";.sidebar-menu{background-color:#fff;padding:2px;border:1px solid #ccc}.sidebar-menu h4{background-color:#2696c8;color:#fff;padding-top:8px;padding-left:10px;font-size:20px}.sidebar-menu .et_pb_widget{margin-bottom:0!important}.sidebar-menu ul li{padding:10px}.sidebar-menu ul li:nth-child(even){background:#edf2f5}.sidebar-menu ul li a:hover{font-weight:700}.sidebar-getinformed h4{background-color:#cf2f0d}.sidebar-getinvolved h4{background-color:#0e9d7f}.sidebar-getsupport h4{background-color:#724974}body.home .et_pb_fullwidth_section{padding-top:0!important}.woocommerce-variation-add-to-cart .quantity{display:none!important}.woocommerce-page .sku_wrapper,.woocommerce-page .summary .price,.woocommerce-page .variations .label,.woocommerce-page th.product-price,.woocommerce-page td.product-price,.woocommerce-page th.product-quantity,.woocommerce-page td.product-quantity,.woocommerce-page .coupon,.woocommerce-page ul.products,.woocommerce-page .posted_in,.woocommerce-page .related,.woocommerce-result-count,.woocommerce-ordering,.woocommerce-tabs,.woocommerce-breadcrumb,body.woocommerce-checkout tr.cart-subtotal,body.woocommerce-checkout tr.order-total,body.woocommerce-checkout .woocommerce-message,#top-header .et-cart-info{display:none}@media only screen and (max-width:767px){}
+
+
+.ui.inverted.vertical.segment {
+    height: 100vh;
+}
+
+.ui.inverted.vertical.segment h1.header.item {
+    font-size: 2em;
+}
+
+.ui.inverted.vertical.segment a.item {
+    font-size: 1.2em;
+}
+
+.ui.inverted.vertical.segment .ui.text.container {
+    height: 300px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.ui.inverted.vertical.segment .ui.text.container h1.header {
+    font-size: 3em;
+}
+
+.ui.inverted.vertical.segment .ui.text.container p {
+    font-size: 1.6em;
+    line-height: 1.6;
+}
+
+.ui.inverted.vertical.segment .ui.footer.segment {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-size: 1.2em;
+    color: gray;
+}
+
+.ui.inverted.vertical.segment .ui.footer.segment a {
+    color: white;
+}
