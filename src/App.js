@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './components/layout/Header';
-import Content from './components/layout/Content';
+import Content from './components/Content';
 //import GraphicTest from './components/layout/GraphicTest';
 //import MainForm from './components/MainForm';
 import { Container } from 'semantic-ui-react';
