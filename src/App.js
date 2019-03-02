@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Content from './components/layout/Content';
-import GraphicTest from './components/layout/GraphicTest';
-import MainForm from './components/MainForm';
+//import GraphicTest from './components/layout/GraphicTest';
+//import MainForm from './components/MainForm';
 import { Container } from 'semantic-ui-react';
 
 class App extends Component {
@@ -14,13 +15,18 @@ class App extends Component {
 
   render() {
     return(
-      <Container id="container" textAlign='center' >
-      
-        < Header / >
-        < Content / >
-             
-      </Container>    
-    )
+      < Router >
+        <Container>          
+          < Route exact path="/" render={props => (
+            <React.Fragment>
+              < Header / >
+              < Content / >
+            </React.Fragment>      
+          )} />
+                   
+        </Container>
+      </Router>
+    );
   }
 }
 

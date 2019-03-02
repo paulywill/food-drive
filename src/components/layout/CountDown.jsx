@@ -10,12 +10,10 @@ class CountDown extends React.Component {
       showTitle: true,
       noPoints: true,
       size: 40,
-      labelSize: 20.
+      labelSize: 20
     };
     return (
-      
-      
-      <CountdownTimer {...settings} />
+        <CountdownTimer {...settings} />
    
       );
   }
