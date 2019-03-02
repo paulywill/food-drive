@@ -8,6 +8,8 @@ import { Container } from 'semantic-ui-react';
 class App extends Component {
 
  //* TODO: Logic for button in Content to redirect/route to MainForm
+//* < MainForm / >
+//* < GraphicTest />
 
 
   render() {
@@ -16,9 +18,7 @@ class App extends Component {
       
         < Header / >
         < Content / >
-        < MainForm / >
-        < GraphicTest />
-     
+             
       </Container>    
     )
   }
