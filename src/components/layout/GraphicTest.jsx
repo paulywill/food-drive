@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
-import { Container, Divider, Grid, Header, Menu, Message, Segment, Table } from 'semantic-ui-react'
+import React, { Component } from 'react';
+import CountDown from './CountDown';
+import { Container, Divider, Grid, Header, Menu, Message, Segment, Table } from 'semantic-ui-react';
 
 
 
@@ -15,8 +16,11 @@ export class GraphicTest extends Component {
     }
   
     render() {
-    return (
-        
+    
+
+        const currentDate = new Date();
+        const year = (currentDate.getMonth() === 11 && currentDate.getDate() > 23) ? currentDate.getFullYear() + 1 : currentDate.getFullYear();
+        return (
         <div className="container">
 
             <div className="ui statistic">
@@ -43,7 +47,7 @@ export class GraphicTest extends Component {
 <div class="ui divider"></div>
             <div className="ui statistic">
                 <div id="foodWeight" className="label">
-                    Food Weight
+                    Approx. Food Weight
                 </div>    
                 <div className="value">
                     600 lbs
@@ -57,9 +61,7 @@ export class GraphicTest extends Component {
                 <div className="label">
                     Time Remaining 
                 </div>
-                <div className="value">
-                    4:05 
-                </div>
+                <CountDown date={`${year}-12-24T00:00:00`} />
             </div>  
         
       
